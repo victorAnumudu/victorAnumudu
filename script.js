@@ -3,6 +3,16 @@ var courses = ["html", "CSS", "javaScript"];
 
 console.log("My name is " + myName + ", I'm taking " + courses);
 
-for(i = 1; i <= 200; i+=2){
-    console.log(i);
+for(i = 0; i <= 200; i++){
+    if(courses.length % 2 == 0){
+        console.log(i);
+        i++;
+    } else{
+        i++;
+        if (i > 200) { 
+            break; 
+        }
+        console.log(i);
+    }
+    
 }
